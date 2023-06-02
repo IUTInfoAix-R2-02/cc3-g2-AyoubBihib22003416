@@ -8,18 +8,24 @@
 
 <HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
-    <Pane prefHeight="400.0" prefWidth="400.0">
+    <Pane fx:id="pane" prefHeight="400.0" prefWidth="400.0">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="50.0" styleClass="toile" />
+        <Circle fx:id="c1" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
+        <Circle fx:id="c2" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
+        <Circle fx:id="c3" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
+        <Circle fx:id="c4" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
+        <Circle fx:id="c5" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
+        <Circle fx:id="c6" centerX="200.0" centerY="200.0" radius="0.0" styleClass="toile" />
         <Group layoutX="195.0" layoutY="195.0">
             <Line endX="10.0" endY="5.0" startY="5.0" styleClass="croix" />
             <Line endX="5.0" endY="10.0" startX="5.0" styleClass="croix" />
         </Group>
-        <Line endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
-        <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
-        <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
+        <Line fx:id="comp1et4" endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
+        <Line fx:id="comp2et5" endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
+        <Line fx:id="comp3et6" endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
         <Text text="Compétence 1" x="170" y="0" />
         <Text text="Compétence 2" x="300" y="100" />
         <Text text="Compétence 3" x="300" y="300" />
@@ -50,7 +56,7 @@
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <Button mnemonicParsing="false" text="Tracer" GridPane.rowIndex="12" />
+         <Button mnemonicParsing="false" text="Tracer" GridPane.rowIndex="12" onAction="#tracerClicked" />
          <Button mnemonicParsing="false" text="Vider" GridPane.columnIndex="1" GridPane.rowIndex="12" onAction="#viderClicked" />
          <TextField fx:id="comp1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          <TextField fx:id="comp2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
