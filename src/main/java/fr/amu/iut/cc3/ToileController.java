@@ -56,6 +56,18 @@ public class ToileController implements Initializable {
     @FXML
     private Line comp3et6;
     @FXML
+    private Line l1;
+    @FXML
+    private Line l2;
+    @FXML
+    private Line l3;
+    @FXML
+    private Line l4;
+    @FXML
+    private Line l5;
+    @FXML
+    private Line l6;
+    @FXML
     private Circle c1;
     @FXML
     private Circle c2;
@@ -137,6 +149,38 @@ public class ToileController implements Initializable {
         c6.setCenterX(getXRadarChart(number6,6));
         c6.setCenterY(getYRadarChart(number6,6));
         c6.setRadius(5);
+
+        l1.setStartX(getXRadarChart(number1,1));
+        l1.setEndX(getXRadarChart(number2,2));
+        l1.setStartY(getYRadarChart(number1,1));
+        l1.setEndY(getYRadarChart(number2,2));
+
+        l2.setStartX(getXRadarChart(number2,2));
+        l2.setEndX(getXRadarChart(number3,3));
+        l2.setStartY(getYRadarChart(number2,2));
+        l2.setEndY(getYRadarChart(number3,3));
+
+        l3.setStartX(getXRadarChart(number3,3));
+        l3.setEndX(getXRadarChart(number4,4));
+        l3.setStartY(getYRadarChart(number3,3));
+        l3.setEndY(getYRadarChart(number4,4));
+
+        l4.setStartX(getXRadarChart(number4,4));
+        l4.setEndX(getXRadarChart(number5,5));
+        l4.setStartY(getYRadarChart(number4,4));
+        l4.setEndY(getYRadarChart(number5,5));
+
+        l5.setStartX(getXRadarChart(number5,5));
+        l5.setEndX(getXRadarChart(number6,6));
+        l5.setStartY(getYRadarChart(number5,5));
+        l5.setEndY(getYRadarChart(number6,6));
+
+        l6.setStartX(getXRadarChart(number6,6));
+        l6.setEndX(getXRadarChart(number1,1));
+        l6.setStartY(getYRadarChart(number6,6));
+        l6.setEndY(getYRadarChart(number1,1));
+
+
 
     }
 }

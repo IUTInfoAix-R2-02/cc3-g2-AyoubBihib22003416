@@ -26,6 +26,12 @@
         <Line fx:id="comp1et4" endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
         <Line fx:id="comp2et5" endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
         <Line fx:id="comp3et6" endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
+        <Line fx:id="l1" endX="0" endY="0" startX="0" startY="0" styleClass="toile" />
+        <Line fx:id="l2" endX="0" endY="0" rotate="0" startX="0" styleClass="toile" />
+        <Line fx:id="l3" endX="0" endY="0" rotate="0" startX="0" styleClass="toile" />
+        <Line fx:id="l4" endX="0" endY="0" startX="0" startY="0" styleClass="toile" />
+        <Line fx:id="l5" endX="0" endY="0" rotate="0" startX="0" styleClass="toile" />
+        <Line fx:id="l6" endX="0" endY="0" rotate="0" startX="0" styleClass="toile" />
         <Text text="Compétence 1" x="170" y="0" />
         <Text text="Compétence 2" x="300" y="100" />
         <Text text="Compétence 3" x="300" y="300" />
